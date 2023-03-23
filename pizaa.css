@@ -1,0 +1,298 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-style:;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*::selection{
+    background-color: var(--color-one);
+    color: white;
+}
+:root{
+    --color-one:#233D62;
+    --colore-two:#1F6AA3;
+    --color-three:#F5F5F5;
+    --four-color:#FFFFFF;
+    --five-color:#727981;
+    --border-radious:10px
+}
+.first-page{
+    position: relative;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.60)), url(food-pizza-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center center;
+}
+/* the icon that u click to show the menu */
+#icon{
+    position: fixed;
+    color: var(--color-one);
+    font-size: 30px;
+    scale: 2;
+    filter: brightness(0%);
+    top: calc(50vh - 25px);
+    left: 30px;
+    cursor: pointer;
+    z-index: 3;
+}
+/* the icon that u click to hide the menu */
+#icon2{
+    cursor: pointer;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+#menu2{
+    position: fixed;
+    visibility: hidden;
+    scale: .5;
+    transition-duration:1s ;
+    filter: none;
+    z-index: 1;
+}
+.first-page ul{
+    list-style-type: none;
+    position: relative;
+    top: 20vh;
+    left: 10px;
+    background-color: var(--color-one);
+    height: calc(60vh);
+    width: 150px;
+    color: var(--four-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.first-page ul li a{
+    font-size: 18px;
+    left: 30px;
+    display: inline-block;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color:var(--four-color);
+    font-weight: bold;
+    margin: 20px;
+    transition-duration: .3s;
+}
+.first-page ul li a:hover{
+    color: var(--colore-two);
+}
+.first-page .name{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.first-page .name h1{
+    text-align: center;
+    font-size: 100px;
+    scale: 1.2;
+    text-transform: uppercase;
+    color: var(--color-three);
+}
+.first-page .name p{
+    font-size: 28px;
+    text-align: center;
+    color: var(--four-color);
+}
+.first-page .name a{
+    text-decoration: none;
+    background-color: var(--color-three);
+    /* color: var(--four-color); */
+    color: var(--color-one);
+    border-radius: 30px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    width: 130px;
+}
+.first-page .scrollbtn a{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: var(--four-color);
+    background-color: var(--color-one);
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    width: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 2;
+}
+/* the second page */
+.second-page{
+    min-height:80vh;
+    background-color:var(--color-three);
+    padding-top: calc(35vh - 2350px);
+    padding: 5vh 0;
+}
+.second-page h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* color: var(--four-color); */
+    color: var(--color-one);
+    font-size: 55px;
+    text-transform: uppercase;
+    margin-bottom: 10px; 
+}
+.second-page ol li{
+    cursor: pointer;
+}
+.second-page img{
+    width: 1000px;
+    height: 500px;
+    border-radius: var(--border-radious);
+}
+.second-page p{
+    text-align: center;
+    font-size: 35px;
+    /* color: var(--four-color); */
+    color: var(--color-one);
+}
+/* 
+  the third page
+*/
+.third-page{
+    /* background-color: var(--main-color); */
+    background-color:var(--colore-two);
+    min-height: 100vh;
+    padding: 50px;
+}
+.third-page >h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: var(--four-color);
+    font-size: 55px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.third-page .card{
+    margin-bottom: 10px;
+    border: 0;
+}
+.third-page .card img{
+    height: 300px;
+}
+.third-page .card-body p{
+    text-align: center;
+    color: var(--five-color);
+    font-size: 22px;
+}
+.third-page .card button{
+    padding: 10px;
+    color: var(--four-color);
+    background-color: var(--color-one);
+    border: none;
+    border-radius: var(--border-radious);
+}
+.third-page .card button a{
+    color: var(--four-color);
+    text-decoration: none;
+}
+.third-page .card h1 {
+    cursor: pointer;
+}
+/* 
+  the fourth page
+*/
+.four-page{
+    min-height: 80vh;
+    background-color: var(--color-three);
+    padding: 10vh 0;
+}
+.four-page form{
+    border-radius: var(--border-radious);
+    position: relative;
+    height: 60vh;
+    background-color:var(--color-one);
+    padding: 40px;
+    display: flex;
+    justify-content:space-around;
+}
+.four-page form input[required]{
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 300px;
+    margin-right: 10px;
+    border: 0;
+    padding: 3px;
+}
+.four-page form input[required]::placeholder{
+    color: var(--color-one);
+    opacity: 1;
+}
+.four-page form input[type=checkbox]{
+    margin-right: 10px;
+    font-size: 23px;
+}
+.four-page form input[type=submit]{
+    padding: 10px;
+    background-color: var(--color-three);
+    color: var(--color-one);
+    border-radius: var(--border-radious);
+    border: 0;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.four-page form .order-image img{
+    width: 300px;
+    height: 350px;
+    border-radius: var(--border-radious);
+}
+.four-page form input:focus{
+    border: none;
+    outline: none;
+}
+/* 
+ the five page
+*/
+.five-page{
+    min-height: 50vh;
+    padding: 30px;
+    background-color: var(--colore-two);
+}
+.five-page p{
+    text-align: center;
+    color: var(--four-color);
+    font-size: 25px;
+    margin: 30px 0;
+}
+.five-page .social-icon{
+    display: flex;
+    justify-content: center;
+}
+.five-page .social-icon i{
+    font-size: 40px;
+    margin-left: 20px;
+    color: var(--color-one);
+    transition-duration: .3s;
+}
+.five-page .social-icon i:hover{
+    color: var(--color-three);
+    scale: 1.2;
+}
+/* 
+  media query
+*/
+@media (max-width:767px) {
+    .second-page img{
+        width: 75%;
+    }
+    .four-page form .order-image img{
+        display: none;
+    }
+    .four-page form{
+        justify-content: center;
+    }
+}

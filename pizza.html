@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" 
+    content="Order Dominos online for delivery or carryout. Menu has delicious pizzas ">
+    <meta name="keyword" content="pizza, restaurant,delivery">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizza</title>
+    <link rel="stylesheet" href="pizaa.css">
+    <link rel="stylesheet" href="cssfont/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <!-- the first page html code -->
+
+    <div class="first-page" id="first" >
+        <div class="icon">
+            <i class="fa-solid fa-caret-left" id="icon"></i>
+        </div>
+        <div id="menu2">
+            <ul id="menu">
+                <!-- <li> <i class="fa-sharp fa-solid fa-pizza-slice" id=icon2></i></li> -->
+                <li><i class="fa-solid fa-bars" id="icon2"></i></li>
+                <li><a href="#secpage">Menu</a></li>
+                <li><a href="#order">order</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#about">about us</a></li>
+            </ul>
+        </div>
+        <div class="name">
+            <h1>pizza</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+                 itaque. Possimus 
+                officia distinctio commodi doloremque deleniti dolor quaerat expedita
+                 odio, ipsam aperiam tempora quia consequuntur a eum. Quas, molestiae
+                  fugit.</p>
+            <a href="#order">order now</a>
+        </div>
+        <div class="scrollbtn">
+            <a href="#"><i class="fa-solid fa-arrow-up-long"></i></a>
+        </div>
+    </div>
+    <!-- second page html code -->
+    <div class="second-page" id="secpage">
+        <h1>menu</h1>
+        <div class="carousel slide container text-center" id="slide">
+            <ol class="carousel-indicators">
+                <li data-target="#slide" data-slide-to="0" class="active"></li>
+                <li data-target="#slide" data-slide-to="1"></li>
+                <li data-target="#slide" data-slide-to="2"></li>
+                <li data-target="#slide" data-slide-to="3"></li>
+                <li data-target="#slide" data-slide-to="4"></li>
+                <li data-target="#slide" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="food-pizza-cheese-wallpaper-preview.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="food-pizza-wallpaper-preview.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="pizza-fire-fast-food-food-wallpaper-preview.jpg"  alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="pizza-food-vegetables-fruit-wallpaper-preview.jpg"  alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="pizzas-pizza-topping-fast-food.jpg"  alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="veggie-pizza-pizza-and-red-pepper-wallpaper-preview.jpg"  alt="">
+                </div>
+            </div>
+            <a href="#slide" class="carousel-control-next" data-slide="next">
+                <span  class="carousel-control-next-icon"></span>
+            </a>
+            <a href="#slide" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+        </div>
+        <p>اكتشف معنى البيتزا الحقيقية</p>
+    </div>
+    <!-- third page html code -->
+    <div class="third-page"id="order">
+        <h1>choose your order</h1>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img  src="food-pizza-cheese-wallpaper-preview.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h1 class="card-title"data-toggle="collapse" data-target="#fcard">cheese pizza </h1>
+                        <p class="card-text collapse" id="fcard">
+                            this is pezza is very very very fantastis
+                        </p>
+                        <button><a href="#buy">buy now</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img  src="pizza-fire-fast-food-food-wallpaper-preview.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h1 class="card-title " data-toggle="collapse" data-target="#scard">checken pizza</h1>
+                        <p class="card-text collapse" id="scard">
+                            this is pezza is very very very fantastis
+                        </p>
+                        <button><a href="#buy">buy now</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img  src="pizza-food-vegetables-fruit-wallpaper-preview.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h1 class="card-title" data-toggle="collapse" data-target="#tcard">vegetables pizza </h1>
+                        <p class="card-text collapse" id="tcard">
+                            this is pezza is very very very fantastis
+                        </p>
+                        <button><a href="#buy"><a href="#buy">buy now</a></a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fourth page html code -->
+    <div class="four-page">
+        <form action="" id="buy" class="container">
+            <div class="form-input">
+                <input type="text" placeholder="Enter Your Name Pls" required>
+                <br>
+                <input type="tel" placeholder="Enter Your Number Pls" required>
+                <br>
+                <input type="checkbox" name="pizaa" value="cheese pizaa" id="one"><label for="one">cheese pizza</label><br>
+                <input type="checkbox" name="pizaa" value="vegetables pizaa" id="two"><label for="two">vegetables pizza</label><br>
+                <input type="checkbox" name="pizaa" value="checken pizaa" id="three"><label for="three">checken pizza</label><br>
+                <input type="submit" value="send your order" id="submit">
+            </div>
+            <div class="order-image">
+                <img src="food-person-calzone-pizza.jpg" alt="">
+            </div>
+        </form>
+    </div>
+    <!-- five page html code -->
+    <div class="five-page" id="contact">
+        <p>you can communicate with us through this link</p>
+        <div class="social-icon">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p>this site was made with love❤️ by mhmd hmada❤️</p>
+    </div>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="pizza.js"></script>
+</body>
+</html>
